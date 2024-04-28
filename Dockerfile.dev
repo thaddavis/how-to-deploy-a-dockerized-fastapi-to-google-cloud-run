@@ -1,0 +1,7 @@
+FROM python:3.12-slim
+
+RUN apt-get update && apt-get install -y curl git vim net-tools build-essential
+
+WORKDIR /code
+
+ENV PYTHONPATH=/code/src
